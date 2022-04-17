@@ -18,7 +18,6 @@ def verify_mobile_number(request):
             otb_obj.save()
             try:
                 request.session['mobile_number'] = form.cleaned_data['mobile_number']
-                print(1)
                 send_otp(mobile_number=form.cleaned_data['mobile_number'], otp=otb_obj.otp)
                 messages.success(request, 'Otp sent to your mobile.')
                 return redirect('enter_otp')
