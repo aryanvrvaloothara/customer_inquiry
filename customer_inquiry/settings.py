@@ -124,4 +124,4 @@ import django_heroku
 
 django_heroku.settings(locals())
 
-CSRF_TRUSTED_ORIGINS = ["https://customer-inquiry.herokuapp.com/"]
+CSRF_TRUSTED_ORIGINS = ["https://customer-inquiry.herokuapp.com"]
